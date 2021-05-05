@@ -81,7 +81,7 @@ main(){
             sm+=bt;
         co "run : "<<sm<<nl;
     }
-    co "Inning ended.\nTarget = "<<sm<<nl;
+    co "Inning ended.\nTarget = "<<sm+1<<nl;
     if(cur=='t')co "Computer's Batting!!\n";
     else co "Your Batting!!\n";
     co "your run -- ";
