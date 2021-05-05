@@ -121,16 +121,18 @@ user = input("Chose Head (H) or Tails (T)")
 print("It's a",comp)
 if (user == comp):
     user_choice = int(input("You won the Toss! What would you like to do? Batting(1) or Bowling(2)"))
+    
+  #bowling 1st inning:-
+
+    if(user_choice == 2):
+        winner = bowl_first()
+
+
+  #batting 1st innings:-
+    elif (user_choice == 1):
+        winner = bat_first()
+
 else:
     print("Sorry you lost the toss! Computer chose to bat first.")
     winner = bowl_first()
     
-#bowling 1st inning:-
-
-if(user_choice == 2):
-    winner = bowl_first()
-
-
-#batting 1st innings:-
-if (user_choice == 1):
-    winner = bat_first()
